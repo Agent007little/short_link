@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block title %}
+<title>Авторизация</title>
+{% endblock %}
+{% block main %}
+  {%if data%}
+    {{data.message}}
+  {%endif%}
+  <div class="form-section container">
+    <h2>Авторизация на сайте</h2>
+    <form method="POST" class="form-auth">
+      {% csrf_token %}
+      {{ form }}
+      <button type="submit" class="auth-button">Войти</button>
+    </form>
+    <hr>
+  </div>
+{% endblock main %}

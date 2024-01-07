@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block title %}
+<title>Ссылки</title>
+{% endblock %}
+{% block main %}
+  <div class="form-section container link-main">
+    <h2>Создание ссылок</h2>
+    {% if form.errors %}
+    {% for errors in form.errors %}
+        {{ errors }}
+    {% endfor %}
+    {% endif %}
+    <form method="POST" class="links-form">
+      {% csrf_token %}
+      {{ link_form.as_p }}
+      <button type="submit" class="reg-button">Создать ссылку</button>
+    </form>
+    <hr>
+    <div class="link-list">
+    <h3>Доступные ссылки</h3>
+    <ul>
+        {% for link in user_links %}
+        <li>Ссылка - <a href="{{ link.original_link }}">/link/{{ link.shortened_link }}/</a></li>
+        {% endfor %}
+    </ul>
+    </div>
+  </div>
+{% endblock main %}

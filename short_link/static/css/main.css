@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fef3e0;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #6f6f6f;
+    text-decoration: none;
+    transition: color 500ms ease;
+}
+
+a:hover {
+    color: #1f1f1f;
+}
+
+.exit-header-btn{
+    color: #6f6f6f;
+    text-decoration: none;
+    transition: color 500ms ease;
+    border: none;
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.exit-header-btn:hover {
+    color: #1f1f1f;
+}
+
+.container {
+    width: 1258px;
+    margin: 0 auto;
+}
+
+header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+header .logo {
+    color: #222;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+header nav a,
+header nav form button {
+    margin-left: 15px;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.home-page h1,
+.home-page p,
+.home-page a {
+    margin: 10px; /
+}
+
+.home-page h1 {
+    font-size: 60px;
+}
+
+.home-page a {
+  color: #fff;
+  text-decoration: none;
+  background: rgb(212,75,56);
+  padding: .5em;
+  border-radius: 5px;
+}
+.home-page a:hover { background: rgb(232,95,76); }
+
+.form-section {
+    box-sizing: border-box;
+    background: #fff;
+    padding: 40px 30px;
+}
+
+.form-section h2 {
+    margin-bottom: 25px;
+}
+
+.reg-form input{
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 50%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.reg-form p {
+    margin-bottom: 10px;
+}
+
+.reg-form ul {
+    list-style-type: none;
+}
+
+.form-auth input {
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.reg-button {
+    padding: 3px;
+    width: 15%;
+    margin: 5px 5px 5px 0px;
+    background-color: rgb(212,75,56);
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.reg-button:hover { background: rgb(232,95,76); }
+
+.auth-button {
+    padding: 3px;
+    width: 15%;
+    margin: 5px 5px 5px 0px;
+    background-color: rgb(212,75,56);
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.auth-button:hover { background: rgb(232,95,76); }
+
+.profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile a {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-decoration: none;
+    background: rgb(212,75,56);
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.profile a:hover { background: rgb(232,95,76); }
+
+.profile-form {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: start;
+}
+
+.profile-form input {
+    width: 90%;
+    margin-top: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.profile-form p {
+    margin-top: 15px;
+}
+
+.profile-btn {
+    width: 30%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(212,75,56);
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.profile-btn:hover { background: rgb(232,95,76); }
+
+.exit-profile-btn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(212,75,56);
+    border: 0px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.exit-profile-btn:hover { background: rgb(232,95,76); }
+
+
+.link-list {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    text-align: start;
+
+}
+.link-list h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.link-list ul {
+    list-style-type: none;
+}
+
+.link-list ul li a {
+    color: red;
+}
+
+.link-main {
+    text-align: center;
+}
+
+.links-form {
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: start;
+}
+
+.links-form input {
+    width: 90%;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.links-form p {
+    margin-top: 15px;
+}
+
+.links-form button {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 20%;
+}
+
+.errorlist {
+    color: red;
+    list-style-type: none;
+}

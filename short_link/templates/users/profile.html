@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+{% block title %}
+<title>Профиль</title>
+{% endblock %}
+{% block main %}
+  <div class="form-section container profile">
+    <h2>Кабинет пользователя</h2>
+      <p><strong class="d-block text-gray-dark">@{{ user.username }}</strong></p>
+      <p><b>Email:</b> {{ user.email }}</p>
+      <form method="post" action="{% url 'exit' %}">
+          {% csrf_token %}
+          <button type="submit" class="exit-profile-btn">Выйти из кабинета</button>
+      </form>
+    <h3>Изменить данные про пользователя</h3>
+    <form method="POST" enctype="multipart/form-data" class="profile-form">
+      {% csrf_token %}
+      {{ update_user.as_p }}
+      <button type="submit" class="profile-btn">Обновить данные</button>
+    </form>
+  </div>
+{% endblock main %}

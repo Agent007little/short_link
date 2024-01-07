@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block title %}
+<title>{{ title }}</title>
+{% endblock %}
+{% block main %}
+    <div class="home-page container">
+        <h1>Сокра.тим</h1>
+        <p>Быстро сократим длинную ссылку для вашего проекта</p>
+        {% if user.is_authenticated %}
+            <a href="{% url 'shorten' %}">Ваши ссылки</a>
+        {% else %}
+            <a href="{% url 'profile' %}">Кабинет пользователя</a>
+        {% endif %}
+</div>
+{% endblock %}
